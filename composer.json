@@ -1,5 +1,5 @@
 {
-    "name": "cig/learn",
+    "name": "rikoefendi/cig",
     "description": "learn a composer and packagist",
     "type": "library",
     "require": {

@@ -3,7 +3,6 @@
 namespace CIG;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
-
 /**
  *
  */
@@ -27,10 +26,6 @@ class User
             'prefix'    => '',
         ]);
 
-        // Set the event dispatcher used by Eloquent models... (optional)
-        use Illuminate\Events\Dispatcher;
-        use Illuminate\Container\Container;
-        $capsule->setEventDispatcher(new Dispatcher(new Container));
 
         // Make this Capsule instance available globally via static methods... (optional)
         $capsule->setAsGlobal();
@@ -43,5 +38,10 @@ class User
     public function getCapsule()
     {
         return $this->capsule;
+    }
+
+    public function getUser()
+    {
+        return Capsule::table('users')->get();
     }
 }
