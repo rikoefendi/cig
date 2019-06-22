@@ -1,0 +1,27 @@
+{
+    "name": "cig/learn",
+    "description": "learn a composer and packagist",
+    "type": "library",
+    "require": {
+        "php": "^7.2",
+        "illuminate/database": "^5.7"
+    },
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Riko Efendi",
+            "email": "rikoefendi100@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "CIG\\": "src/"
+        }
+    },
+    "autoload-dev": {
+       "psr-4": {
+           "CIG\\Tests\\": "tests/"
+       }
+   }
+}
